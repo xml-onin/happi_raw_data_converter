@@ -1,12 +1,12 @@
 <?php 
 
-$con = mysqli_connect('localhost','root','','db_happi2');
+$con = mysqli_connect('localhost','root','RrbmCJ8N5hzE4GLS','happi_db');
 
 if ($con) {
 	}
 else
 {
-	die($con);
+	echo "<h3 style='color:red;'><strong>Connection is not successfuly Established..</strong></h3><br><i>Contact <b>7010</b></i>";
 }
 
 ?>

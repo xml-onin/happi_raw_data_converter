@@ -101,11 +101,11 @@ function LoadInfo($id){
 		$gender = $row['gender'];
 		$age = $row['age']; 
 		$qid .= "<th>Q No. ".$row['question_id']."</th>";
-		$ans .= "<td>".$row['test_answer']."</td>"; 
+		$ans .= "<td>".$row['text_answer']."</td>"; 
 		$country = $row['country'];
 		$nationality = $row['nationality'];
 		$partner = $row['partner_name'];
-		$campaign = $row['campaign_name'];
+		
 	}
 
 
@@ -117,7 +117,7 @@ function LoadInfo($id){
 	<td>".$nationality."</td>
 	<td>".$country."</td>
 	<td>".$partner."</td>
-	<td>".$campaign."</td>
+
 	</tr>";
 	$_SESSION['sql'] = $sql;
 }
